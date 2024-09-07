@@ -17,9 +17,9 @@ Hours: 3h30m<br>
 + tests
 0h35m
 + documentation
-0h10m
+0h15m
 + feedback
 
 
 insgesamt
-4h15m
+4h20m
