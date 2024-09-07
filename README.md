@@ -5,9 +5,10 @@
 git clone https://github.com/Khroxx/doctor_booking_tool.git
 ```
 
-2. Run install script <br>
-If using Max or Linux:<br>
-- installWithBash.sh <br>
+2. Open in Code Editor and run install script <br>
+If using Max or Linux in Terminal:<br>
+- chmod +x installWithBash.sh <br>
+- ./installWithBash.sh <br>
 If using Windows/WSL: <br>
 - installOnWindows.bat <br>
 

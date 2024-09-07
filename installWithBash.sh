@@ -1,9 +1,6 @@
 # LINUX and MAC
 #!/bin/bash
 
-# Wechseln in das Projekt
-cd doctor_booking_tool/
-
 # create virtual environment
 python3 -m venv env
 
