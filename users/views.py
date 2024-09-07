@@ -1,4 +1,6 @@
+import os
 from django.shortcuts import render
+from django.views.static import serve
 from rest_framework.authtoken.views import APIView
 from .serializers import *
 from rest_framework.response import Response
@@ -68,3 +70,9 @@ class AppointmentView(APIView):
         appointment = get_object_or_404(Appointment, pk=pk)
         appointment.delete()
         return Response({'message': 'Appointment has been deleted'})
+    
+    
+def docs_serve(request, path='index.html'):
+    if path == '':
+        path = 'index.html'
+    return serve(request, path, document_root=os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), 'docs/_build/html'))
