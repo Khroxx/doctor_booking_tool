@@ -35,5 +35,5 @@ Code done in <br>
 + feedback x
 
 
-insgesamt <br>
+total <br>
 4h30m

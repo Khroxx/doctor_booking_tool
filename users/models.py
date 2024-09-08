@@ -5,10 +5,7 @@ from django.contrib.auth.models import AbstractUser, User as DjangoUser
 # Create your models here.
 
 class DjangoUser(AbstractUser):
-    def save(self, *args, **kwargs):
-        if self.pk is None or 'password' in self.get_dirty_fields():
-            self.set_password(self.password)
-        super().save(*args, **kwargs)
+    pass
 
 class Patient(models.Model):
     name = models.CharField(max_length=100, default=None)
