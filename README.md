@@ -23,8 +23,8 @@ Use Postman to test the APIs: <br>
 - http://127.0.0.1:8000/api/doctors/
 To use appointments you first have to authenticate: <br>
 1. create DjangoUser with Terminal or admin interface
-2. POST http://127.0.0.1:8000/api/auth-token with djangoUser username and password in headers to get token
-3. with djangoUser credentials and 'Token xxxxx' you can now GET, POST and DELETE Appointments
+2. POST http://127.0.0.1:8000/api/auth-token with djangoUser username and password in headers to get 'token: xxxx'
+3. now send any request to http://127.0.0.1:8000/api/appointments/ with djangouser credentials an in headers set Authorization - 'Token xxxx'
 - You will only get Appointments that are connected to djangoUser through the doctor
 
 # Jobchallenge
