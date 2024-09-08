@@ -1,6 +1,5 @@
 @echo off
 
-cd doctor_booking_tool/
 :: Virtuelle Umgebung erstellen
 python -m venv venv
 
